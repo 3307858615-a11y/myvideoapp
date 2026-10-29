@@ -4,7 +4,7 @@
     <application
         android:usesCleartextTraffic="true"
         android:label="内部采集"
-        android:theme="@android:style/Theme.Material.Light">
+        android:theme="@style/Theme.AppCompat.Light">
         <activity android:name=".MainActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
