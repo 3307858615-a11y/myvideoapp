@@ -14,7 +14,9 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        
+        if (checkSelfPermission(android.Manifest.permission.INTERNET) != android.content.pm.PackageManager.PERMISSION_GRANTED) {
+            requestPermissions(arrayOf(android.Manifest.permission.INTERNET), 1)
+        }
         val layout = LinearLayout(this).apply { orientation = LinearLayout.VERTICAL }
         val videoView = VideoView(this).apply { 
             layoutParams = LinearLayout.LayoutParams(-1, 600) 
