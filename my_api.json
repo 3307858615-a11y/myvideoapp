@@ -1,0 +1,13 @@
+{
+  "sites": [
+    {
+      "key": "bfzy",
+      "name": "我的专属采集",
+      "type": 3,
+      "api": "https://bfzyapi.com/api.php/provide/vod",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    }
+  ]
+}
